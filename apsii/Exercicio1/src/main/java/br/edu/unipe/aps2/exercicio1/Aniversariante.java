@@ -41,12 +41,22 @@ public class Aniversariante {
         @Override
         public boolean equals(Object obj) {
             if (this == obj) {
+                    System.out.println("True!");
                 return true;
             }
             if (obj == null || getClass() != obj.getClass()) {
+                System.out.println("False!");
+
                 return false;
             }
             final Aniversariante other = (Aniversariante) obj;
+                System.out.println("False!");
             return Objects.equals(this.nome, other.nome) && Objects.equals(this.dataAniversario, other.dataAniversario);
         }
+
+        @Override
+        public String toString() {
+            return "{" + "nome=" + nome + ", dataAniversario=" + dataAniversario + '}';
+        }
+        
 }
