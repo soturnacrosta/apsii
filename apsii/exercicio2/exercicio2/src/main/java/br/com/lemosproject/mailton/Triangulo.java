@@ -21,9 +21,9 @@ public class Triangulo implements FiguraGeometrica {
     public String getNomeFigura() {
         
         return "Triângulo";
-        
+
     }
     
-
+    
 
 }
