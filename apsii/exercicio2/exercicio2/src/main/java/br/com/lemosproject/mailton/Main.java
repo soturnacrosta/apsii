@@ -14,9 +14,9 @@ public class Main {
         System.out.println(triangulo.calculaArea());   
         System.out.println(triangulo.getNomeFigura());  
         
-        Losango losango = new Losango (50f, 50f);
+        Losango losango = new Losango (50f, 10f);
         Losango losango2 = new Losango (20f, 50f);
-        Losango losango3 = new Losango (40f, 50f);
+        Losango losango3 = new Losango (40f, 30f);
 
 
         /*System.out.println(losango.calculaArea());
@@ -28,14 +28,18 @@ public class Main {
         GerenteDeFIguras gerente = new GerenteDeFIguras();
 
         gerente.adicionaFIgura(losango3);
-        gerente.adicionaFIgura(losango2);
+        gerente.adicionaFIgura(losango2); //letra a
         gerente.adicionaFIgura(losango);
 
         losangoList.add(losango);
-        losangoList.add(losango2);
+        losangoList.add(losango2); 
         losangoList.add(losango3);
 
-        System.out.println(gerente.imprimeFiguras());
+        System.out.println(gerente.imprimeFiguras()); //letra b
+
+        gerente.getMaiorAreaDeFigura(losangoList);
+
+        gerente.getAreaTotal(losangoList);
 
     }
 }
