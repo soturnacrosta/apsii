@@ -16,11 +16,30 @@ public class PizzaFactoryChicago implements PizzaIngredientFactory {
 
     @Override
     public Cheese CreateCheese() {
-        return null;
+
+        Cheese c = new Cheese();
+        return c;
     }
 
     @Override
     public Sauce CreateSauce() {
-        return null;
+
+        Sauce s = new Sauce();
+        return s;
     }
+
+        @Override
+    public Pepperoni CreatePepperoni() {
+        
+        Pepperoni p = new Pepperoni();
+        return p;
+    }
+
+    @Override
+    public Veggies CreateVeggies() {
+        
+        Veggies v = new Veggies();
+        return v;
+    }
+    
 }
